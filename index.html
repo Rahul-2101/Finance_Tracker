@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Finance Tracker</title>
+   <link rel="icon" type="image/x-icon" href="logo.png">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="headerBar">
+    <header>
+      <h1 class="title">My Finance Tracker</h1>
+      
+      <header>
+  </div>
+  <div class="content">
+    <h3 class="secondTitle">Add a new transaction: </h3>
+<div class="form">
+    <form id="expForm">
+        <div class="formLine left">
+            <span for="type">Type:</span>
+            <select id="type">
+                <option value="chooseOne">Choose one...</option>
+                <option value="income">income</option>
+                <option value="expense">expense</option>
+            </select>
+        </div>
+        <div class="formLine right">
+            <span for="name">Name:</span>
+            <input type="text" id="name">
+        </div>
+
+        <div class="formLine left">
+            <span for="date">Date:</span>
+            <input type="date" id="date">
+        </div>
+        <div class="formLine right">
+            <span for="amount">Amount:</span>
+            <input type="text" id="amount">
+        </div>
+        <button type="submit" class="buttonSave">AddTransaction</button>
+    </form>
+</div>
+</section>
+<section class="content">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Option</th>
+                <!-- <th>Edit</th> -->
+            </tr>
+        </thead>
+        <tbody id="transactionTable">
+
+        </tbody>
+    </table>
+    <!-- <button id="editButton">Edit</button>
+    <div id="editForm" class="hidden">
+        <input type="text" id="editedName" placeholder="New Name">
+        <input type="date" id="editedDate">
+        <input type="number" id="editedAmount" placeholder="New Amount">
+        <button id="saveButton">Save</button>
+    </div>
+     -->
+
+
+
+</section>
+  <h2 class="topbar">Your Current Balance</h2>
+      <p>
+        <span class="currency">$</span>
+        <span class="balance"></span>
+      </p>
+  <script src="script.js"></script>
+</body>
+</html>
